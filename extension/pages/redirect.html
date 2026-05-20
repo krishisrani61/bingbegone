@@ -1,7 +1,32 @@
-<h1>BingBeGone</h1>
-<p>Redirecting your search...</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BingBeGone Redirecting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./redirect.css">
+</head>
+<body>
+  <main class="container narrow">
+    <section class="hero">
+      <h1>BingBeGone</h1>
+      <p>Redirecting your search...</p>
+    </section>
 
-<button id="cancel">Cancel</button>
-<button id="goNow">Go now</button>
+    <section class="card center">
+      <p id="destination" class="destination"></p>
 
-<script type="module" src="./redirect.js"></script>
+      <div class="progress">
+        <div id="bar" class="bar"></div>
+      </div>
+
+      <div class="actions">
+        <button id="goNow">Go now</button>
+        <button id="cancel" class="secondary">Cancel</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./redirect.js"></script>
+</body>
+</html>

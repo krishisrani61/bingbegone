@@ -1,33 +1,70 @@
 # BingBeGone
 
-BingBeGone redirects Bing search URLs to your preferred search engine.
+**BingBeGone** redirects Bing search URLs to your preferred search engine.
+
+Useful for cases where Windows opens your default browser, but still sends searches through Bing.
 
 ## Features
 
-- Redirect Bing searches to Google
-- Custom search engine URL support
-- Optional redirect confirmation page
-- Cancel button before redirect
-- Sync settings with Chrome profile
-- Lightweight Manifest V3 extension
+- Redirect Bing searches to Google, DuckDuckGo, Brave Search, Startpage, Kagi, or a custom engine
+- Optional redirect page with a cancel button
+- Configurable redirect delay
+- Chrome profile sync using `chrome.storage.sync`
+- Local-only mode using `chrome.storage.local`
+- Enable/disable toggle
 - No analytics
-- No tracking
 - No external server
+- Manifest V3
 
 ## Example
 
 Input:
 
+```txt
 https://www.bing.com/search?q=snakes&FORM=WSBEDG&PC=WSBREC
+```
 
 Output:
 
+```txt
 https://www.google.com/search?q=snakes
+```
 
-## Development
+## Install for development
 
-1. Clone the repo
-2. Open Chrome Extensions
-3. Enable Developer Mode
-4. Load unpacked
-5. Select the `extension/` folder
+1. Download or clone this repo.
+2. Open Chrome or Edge.
+3. Go to:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+4. Enable **Developer mode**.
+5. Click **Load unpacked**.
+6. Select the `extension/` folder.
+
+## Icons
+
+This repo intentionally does not include image files.
+
+Add these files yourself:
+
+```txt
+extension/assets/icon-16.png
+extension/assets/icon-48.png
+extension/assets/icon-128.png
+```
+
+## Custom search URL format
+
+Use `{query}` where the search text should go.
+
+Examples:
+
+```txt
+https://www.google.com/search?q={query}
+https://duckduckgo.com/?q={query}
+https://search.brave.com/search?q={query}
+```
+
+## Privacy
+
+BingBeGone does not collect, transmit, or sell data. Settings are stored using Chrome extension storage.

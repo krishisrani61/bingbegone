@@ -1,16 +1,32 @@
-const ENGINES = {
-  google: "https://www.google.com/search?q={query}",
-  duckduckgo: "https://duckduckgo.com/?q={query}",
-  brave: "https://search.brave.com/search?q={query}",
-  startpage: "https://www.startpage.com/sp/search?query={query}",
-  kagi: "https://kagi.com/search?q={query}"
-};
+import { SEARCH_ENGINES } from "../defaults.js";
 
 export function buildRedirectUrl(query, settings) {
+  const engine = SEARCH_ENGINES[settings.targetEngine] || SEARCH_ENGINES.google;
+
   const template =
     settings.targetEngine === "custom"
       ? settings.customSearchUrl
-      : ENGINES[settings.targetEngine] || ENGINES.google;
+      : engine.template;
 
-  return template.replace("{query}", encodeURIComponent(query));
+  if (!template || !template.includes("{query}")) {
+    return SEARCH_ENGINES.google.template.replace(
+      "{query}",
+      encodeURIComponent(query)
+    );
+  }
+
+  const finalQuery = settings.preserveOriginalQueryEncoding
+    ? query
+    : encodeURIComponent(query);
+
+  return template.replaceAll("{query}", finalQuery);
+}
+
+export function buildRedirectPageUrl(targetUrl, originalUrl) {
+  const params = new URLSearchParams({
+    target: targetUrl,
+    original: originalUrl
+  });
+
+  return chrome.runtime.getURL(`pages/redirect.html?${params.toString()}`);
 }

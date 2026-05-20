@@ -3,7 +3,10 @@
   "name": "BingBeGone",
   "description": "Redirect Bing searches to your preferred search engine.",
   "version": "0.1.0",
-  "permissions": ["storage", "webNavigation"],
+  "permissions": [
+    "storage",
+    "webNavigation"
+  ],
   "host_permissions": [
     "https://www.bing.com/*",
     "https://bing.com/*"
@@ -16,10 +19,5 @@
   "action": {
     "default_popup": "popup/popup.html",
     "default_title": "BingBeGone"
-  },
-  "icons": {
-    "16": "assets/icon-16.png",
-    "48": "assets/icon-48.png",
-    "128": "assets/icon-128.png"
   }
 }

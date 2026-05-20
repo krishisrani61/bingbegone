@@ -1,0 +1,19 @@
+{
+  "name": "bingbegone",
+  "version": "0.1.0",
+  "description": "Redirect Bing searches to your preferred search engine.",
+  "private": true,
+  "scripts": {
+    "zip": "node scripts/zip.js",
+    "lint": "echo \"No linter configured yet.\""
+  },
+  "keywords": [
+    "chrome-extension",
+    "bing",
+    "google",
+    "redirect",
+    "search"
+  ],
+  "author": "Krish Israni",
+  "license": "MIT"
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BingBeGone Options</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./redirect.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>BingBeGone</h1>
+      <p>Configure how Bing search URLs get redirected.</p>
+    </header>
+
+    <section class="card">
+      <label class="row">
+        <span>
+          <strong>Enabled</strong>
+          <small>Turn BingBeGone on or off.</small>
+        </span>
+        <input id="enabled" type="checkbox">
+      </label>
+
+      <label>
+        <strong>Search engine</strong>
+        <select id="targetEngine">
+          <option value="google">Google</option>
+          <option value="duckduckgo">DuckDuckGo</option>
+          <option value="brave">Brave Search</option>
+          <option value="startpage">Startpage</option>
+          <option value="kagi">Kagi</option>
+          <option value="custom">Custom</option>
+        </select>
+      </label>
+
+      <label>
+        <strong>Custom search URL</strong>
+        <input id="customSearchUrl" type="url" placeholder="https://example.com/search?q={query}">
+        <small>Use <code>{query}</code> where the search text should go.</small>
+      </label>
+
+      <label>
+        <strong>Redirect mode</strong>
+        <select id="redirectMode">
+          <option value="instant">Instant redirect</option>
+          <option value="redirectPage">Show redirect page with cancel button</option>
+        </select>
+      </label>
+
+      <label>
+        <strong>Redirect delay</strong>
+        <input id="redirectDelayMs" type="number" min="0" max="10000" step="100">
+        <small>Only applies to the redirect page. Measured in milliseconds.</small>
+      </label>
+
+      <label class="row">
+        <span>
+          <strong>Sync settings to Chrome profile</strong>
+          <small>Uses Chrome extension sync storage.</small>
+        </span>
+        <input id="syncSettings" type="checkbox">
+      </label>
+
+      <label class="row">
+        <span>
+          <strong>Preserve original query encoding</strong>
+          <small>Usually leave this off.</small>
+        </span>
+        <input id="preserveOriginalQueryEncoding" type="checkbox">
+      </label>
+
+      <label class="row">
+        <span>
+          <strong>Debug logs</strong>
+          <small>Print redirect details to the extension service worker console.</small>
+        </span>
+        <input id="showDebugLogs" type="checkbox">
+      </label>
+    </section>
+
+    <section class="actions">
+      <button id="save">Save settings</button>
+      <button id="reset" class="secondary">Reset</button>
+    </section>
+
+    <p id="status" class="status" role="status"></p>
+  </main>
+
+  <script type="module" src="./options.js"></script>
+</body>
+</html>

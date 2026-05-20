@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #111;
+  --fg: #f5f5f5;
+  --muted: #aaa;
+  --card: #1c1c1c;
+  --border: #333;
+  --button: #f5f5f5;
+  --button-fg: #111;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f7f7;
+    --fg: #151515;
+    --muted: #555;
+    --card: #fff;
+    --border: #ddd;
+    --button: #151515;
+    --button-fg: #fff;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.container {
+  width: min(760px, calc(100vw - 32px));
+  margin: 48px auto;
+}
+
+.narrow {
+  width: min(520px, calc(100vw - 32px));
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.center {
+  text-align: center;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+}
+
+label strong {
+  display: block;
+}
+
+small {
+  color: var(--muted);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input[type="url"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--fg);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.row {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: var(--button);
+  color: var(--button-fg);
+  font-weight: 650;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.status {
+  min-height: 1.5em;
+  color: var(--muted);
+}
+
+.destination {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--fg) 12%, transparent);
+  overflow: hidden;
+}
+
+.bar {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--fg);
+  transition-property: width;
+  transition-timing-function: linear;
+}

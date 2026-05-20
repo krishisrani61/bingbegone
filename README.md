@@ -30,28 +30,6 @@ Output:
 https://www.google.com/search?q=snakes
 ```
 
-## Install for development
-
-1. Download or clone this repo.
-2. Open Chrome or Edge.
-3. Go to:
-   - Chrome: `chrome://extensions`
-   - Edge: `edge://extensions`
-4. Enable **Developer mode**.
-5. Click **Load unpacked**.
-6. Select the `extension/` folder.
-
-## Icons
-
-This repo intentionally does not include image files.
-
-Add these files yourself:
-
-```txt
-extension/assets/icon-16.png
-extension/assets/icon-48.png
-extension/assets/icon-128.png
-```
 
 ## Custom search URL format
 

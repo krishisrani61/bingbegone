@@ -1,12 +1,15 @@
 # Privacy Policy
 
-BingBeGone does not collect, transmit, sell, or share user data.
+BingBeGone does not collect, store, transmit, or sell any personal data.
 
-The extension reads Bing search URLs only so it can extract the search query and redirect it to the selected search engine.
+All extension functionality operates locally within the user's browser.
 
-Settings may be stored using either:
+The extension:
+- does not use analytics
+- does not track browsing history
+- does not collect search queries
+- does not communicate with external servers
 
-- `chrome.storage.sync`
-- `chrome.storage.local`
+User settings are stored locally using Chrome extension storage APIs and may optionally sync through the user's Chrome account if enabled by the user.
 
-No external servers are used by BingBeGone.
+BingBeGone only activates on Bing search URLs required for redirect functionality.

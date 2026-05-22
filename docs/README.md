@@ -43,6 +43,21 @@ Your call.
 
 ---
 
+
+# Documentation
+
+- [CONFIG](CONFIG)
+- [FAQ](FAQ)
+- [PERMISSIONS](PERMISSIONS)
+- [PRIVACY](PRIVACY)
+- [SIDELOADING](SIDELOADING)
+- [TROUBLESHOOTING](TROUBLESHOOTING)
+- [DEVELOPMENT](DEVELOPMENT)
+- [ARCHITECTURE](ARCHITECTURE)
+
+---
+
+
 # Example
 
 Input:
@@ -84,19 +99,6 @@ BingBeGone can also be sideloaded on:
 - Basically any Chromium browser with enough emotional resilience
 
 See [SIDELOADING](SIDELOADING)
-
----
-
-# Documentation
-
-- [CONFIG](CONFIG)
-- [FAQ](FAQ)
-- [PERMISSIONS](PERMISSIONS)
-- [PRIVACY](PRIVACY)
-- [SIDELOADING](SIDELOADING)
-- [TROUBLESHOOTING](TROUBLESHOOTING)
-- [DEVELOPMENT](DEVELOPMENT)
-- [ARCHITECTURE](ARCHITECTURE)
 
 ---
 

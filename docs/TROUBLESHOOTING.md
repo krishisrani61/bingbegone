@@ -6,7 +6,7 @@
 
 Check:
 - extension is enabled
-- Developer Mode is enabled
+- Developer Mode is enabled (if sideloading)
 - permissions were accepted
 
 Then reload the extension.

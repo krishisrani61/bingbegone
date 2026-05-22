@@ -3,27 +3,73 @@
 <head>
   <meta charset="utf-8">
   <title>BingBeGone Options</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Configure how BingBeGone redirects Bing searches to your preferred search engine.">
+
   <link rel="stylesheet" href="./redirect.css">
 </head>
+
 <body>
   <main class="container">
+
     <header class="hero">
+      <img
+        src="../assets/logo.png"
+        alt="BingBeGone"
+        class="logo"
+      >
+
       <h1>BingBeGone</h1>
-      <p>Configure how Bing search URLs get redirected.</p>
+
+      <p>
+        Configure how Bing search URLs get redirected.
+      </p>
+
+      <div class="hero-links">
+        <a href="https://bingbegone.com" target="_blank">
+          Website
+        </a>
+
+        <a href="https://bingbegone.com/FAQ" target="_blank">
+          FAQ
+        </a>
+
+        <a href="https://bingbegone.com/PRIVACY" target="_blank">
+          Privacy
+        </a>
+
+        <a href="https://bingbegone.com/PERMISSIONS" target="_blank">
+          Permissions
+        </a>
+
+        <a href="https://bingbegone.com/TROUBLESHOOTING" target="_blank">
+          Troubleshooting
+        </a>
+
+        <a href="https://github.com/yourusername/BingBeGone" target="_blank">
+          GitHub
+        </a>
+      </div>
     </header>
 
     <section class="card">
+
       <label class="row">
         <span>
           <strong>Enabled</strong>
-          <small>Turn BingBeGone on or off.</small>
+          <small>
+            Turn BingBeGone on or off.
+          </small>
         </span>
+
         <input id="enabled" type="checkbox">
       </label>
 
       <label>
         <strong>Search engine</strong>
+
         <select id="targetEngine">
           <option value="google">Google</option>
           <option value="duckduckgo">DuckDuckGo</option>
@@ -36,55 +82,120 @@
 
       <label>
         <strong>Custom search URL</strong>
-        <input id="customSearchUrl" type="url" placeholder="https://example.com/search?q={query}">
-        <small>Use <code>{query}</code> where the search text should go.</small>
+
+        <input
+          id="customSearchUrl"
+          type="url"
+          placeholder="https://example.com/search?q={query}"
+        >
+
+        <small>
+          Use <code>{query}</code> where the search text should go.
+        </small>
       </label>
 
       <label>
         <strong>Redirect mode</strong>
+
         <select id="redirectMode">
-          <option value="instant">Instant redirect</option>
-          <option value="redirectPage">Show redirect page with cancel button</option>
+          <option value="instant">
+            Instant redirect
+          </option>
+
+          <option value="redirectPage">
+            Show redirect page with cancel button
+          </option>
         </select>
       </label>
 
       <label>
         <strong>Redirect delay</strong>
-        <input id="redirectDelayMs" type="number" min="0" max="10000" step="100">
-        <small>Only applies to the redirect page. Measured in milliseconds.</small>
+
+        <input
+          id="redirectDelayMs"
+          type="number"
+          min="0"
+          max="10000"
+          step="100"
+        >
+
+        <small>
+          Only applies to the redirect page.
+          Measured in milliseconds.
+        </small>
       </label>
 
       <label class="row">
         <span>
           <strong>Sync settings to Chrome profile</strong>
-          <small>Uses Chrome extension sync storage.</small>
+
+          <small>
+            Uses Chrome extension sync storage.
+          </small>
         </span>
+
         <input id="syncSettings" type="checkbox">
       </label>
 
       <label class="row">
         <span>
           <strong>Preserve original query encoding</strong>
-          <small>Usually leave this off.</small>
+
+          <small>
+            Usually leave this off unless you enjoy suffering.
+          </small>
         </span>
-        <input id="preserveOriginalQueryEncoding" type="checkbox">
+
+        <input
+          id="preserveOriginalQueryEncoding"
+          type="checkbox"
+        >
       </label>
 
       <label class="row">
         <span>
           <strong>Debug logs</strong>
-          <small>Print redirect details to the extension service worker console.</small>
+
+          <small>
+            Print redirect details to the extension service worker console.
+          </small>
         </span>
+
         <input id="showDebugLogs" type="checkbox">
       </label>
+
     </section>
 
     <section class="actions">
-      <button id="save">Save settings</button>
-      <button id="reset" class="secondary">Reset</button>
+      <button id="save">
+        Save settings
+      </button>
+
+      <button id="reset" class="secondary">
+        Reset
+      </button>
     </section>
 
-    <p id="status" class="status" role="status"></p>
+    <p
+      id="status"
+      class="status"
+      role="status"
+    ></p>
+
+    <footer class="footer">
+      <p>
+        BingBeGone redirects Bing searches to your preferred search engine.
+      </p>
+
+      <p>
+        No tracking. No telemetry. No nonsense.
+      </p>
+
+      <p>
+        Made with questionable amounts of caffeine ☕
+      </p>
+    </footer>
+
   </main>
 
   <script type="module" src="./options.js"></script>

@@ -80,9 +80,8 @@ Nature is healing.
 
 ## Chrome Web Store
 
-Install directly from the Chrome Web Store.
+Install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/bingbegone/kniokdldeemnncgekmnfgadjaagaiepp).
 
-(once approved and not being judged by an exhausted Google reviewer at 2AM)
 
 ---
 

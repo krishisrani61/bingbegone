@@ -1,76 +1,82 @@
-# FAQ
+# Frequently Asked Questions ❓
 
-## Does this uninstall Bing?
+---
+
+## Does this remove Bing from Windows?
 
 No.
 
-We are many things.
+Microsoft would send a drone strike.
 
-We are not legally allowed to be malware.
+This extension only redirects Bing search pages *inside your browser*.
 
 ---
 
-## Does this block Microsoft Edge?
+## Does this work with Windows Search?
+
+Sometimes.
+
+If Windows opens a Bing search URL in your default browser, yes.
+
+If Windows decides to do Microsoft Things™, maybe not.
+
+---
+
+## Does this track me?
 
 No.
 
-Edge is innocent in this situation.
+We genuinely do not care what you search for.
 
-Mostly.
-
----
-
-## Why does Windows keep opening Bing?
-
-Because Microsoft really likes Bing.
-
-Like *really* likes Bing.
-
-Like “please stop asking” likes Bing.
+That is between you and your search engine.
 
 ---
 
-## Does BingBeGone track searches?
+## Why does this need permissions?
 
-No.
+See:
+[PERMISSIONS](PERMISSIONS)
 
-Your questionable 2AM searches remain between you and your browser history.
+Short version:
+Chrome extensions are treated like raccoons in a national park.
+
+Everything requires paperwork.
 
 ---
 
-## Can I use a custom search engine?
+## Can I use another search engine?
 
 Yes.
 
-As long as it supports query URLs.
+Even weird ones.
 
-If you want to redirect searches into a local Apache Solr cluster running on a Raspberry Pi in a shoebox, nobody here will stop you.
+Especially weird ones.
 
 ---
 
 ## Does this work on Firefox?
 
-Currently no.
+Not officially.
 
-This extension is built for Chromium browsers.
-
-Firefox support may happen eventually if the stars align and Mozilla continues existing.
+A Firefox port is possible but currently unsupported.
 
 ---
 
-## Can this break websites?
+## Can this break Bing?
 
-Probably not.
+Emotionally?
+Hopefully.
 
-But if Microsoft invents a new experimental ultra-hyper-Bing-navigation-system-protocol-layer™ tomorrow, things may temporarily explode.
+Technically?
+No.
 
 ---
 
-## Why does this extension exist?
+## Why did you make this?
 
-Spite.
+Because software should respect user preference.
 
-Next question.
+Also because it was funny.
 
 ---
 
@@ -78,6 +84,4 @@ Next question.
 
 Yes.
 
-You are encouraged to inspect the code.
-
-You are also encouraged to laugh at the comments.
+You may inspect every terrible decision yourself.

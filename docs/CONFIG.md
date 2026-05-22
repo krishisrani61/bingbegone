@@ -1,10 +1,10 @@
-# Configuration
+# Configuration ⚙️
 
-BingBeGone is intentionally configurable because hardcoding things is how software becomes haunted.
+BingBeGone is intentionally configurable because software should obey *you*, not the other way around.
 
 ---
 
-# Search Engine Selection
+## Search Engine Options
 
 Supported engines:
 
@@ -13,13 +13,13 @@ Supported engines:
 - Brave Search
 - Startpage
 - Kagi
-- Custom URL
+- Custom
 
 ---
 
-# Custom Search URLs
+## Custom Search Engines
 
-You may specify a custom search URL using:
+You may specify a custom URL using:
 
 ```txt
 {query}
@@ -31,61 +31,69 @@ Example:
 https://example.com/search?q={query}
 ```
 
-BingBeGone replaces `{query}` with the search terms from Bing.
+When searching for:
+
+```txt
+snakes
+```
+
+BingBeGone generates:
+
+```txt
+https://example.com/search?q=snakes
+```
+
+Amazing technology.
 
 ---
 
-# Redirect Modes
+## Redirect Modes
 
-## Instant Redirect
+### Instant Redirect
 
-Immediately redirects Bing searches.
+Immediately redirects the Bing search.
 
 Fast.
-
 Aggressive.
-
 Efficient.
-
-Like a New York taxi driver.
+Slightly rude.
 
 ---
 
-## Redirect Page
+### Redirect Page
 
-Shows an intermediate page before redirecting.
+Shows an interstitial page before redirecting.
 
 Features:
 - Cancel button
-- Delay timer
-- Visible destination
-- Emotional closure
+- Redirect timer
+- Target preview
+
+Useful if:
+- you enjoy having choices
+- you distrust software
+- you clicked something accidentally
+- you are emotionally attached to Bing
 
 ---
 
-# Redirect Delay
+## Sync Settings
 
-Adjustable in milliseconds.
+BingBeGone supports Chrome profile sync.
 
-Recommended values:
-
-| Delay | Experience |
-|---|---|
-| 0ms | Teleportation |
-| 500ms | Fast |
-| 1500ms | Normal |
-| 5000ms | Dramatic |
+Your settings can automatically transfer between:
+- devices
+- profiles
+- computers
+- questionable life decisions
 
 ---
 
-# Sync Settings
+## Disable Redirects
 
-BingBeGone can sync settings through your Chrome profile using:
+You may disable the extension temporarily from the popup menu.
 
-```txt
-chrome.storage.sync
-```
-
-This allows settings to follow you between devices.
-
-Assuming Google feels cooperative that day.
+This is mainly useful for:
+- testing
+- debugging
+- Stockholm syndrome

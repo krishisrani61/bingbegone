@@ -47,3 +47,18 @@ button {
   cursor: pointer;
   font-weight: 650;
 }
+
+
+body {
+  width: 260px;
+  padding: 16px;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#logo {
+  width: 100%;
+  margin-bottom: 14px;
+  border-radius: 10px;
+}

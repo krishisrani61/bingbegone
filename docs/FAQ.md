@@ -1,18 +1,32 @@
 # FAQ
 
-## Does BingBeGone block Bing entirely?
+## Does this uninstall Bing?
 
 No.
 
-BingBeGone only redirects Bing search pages.
+We are many things.
+
+We are not legally allowed to be malware.
 
 ---
 
-## Does this work in Microsoft Edge?
+## Does this block Microsoft Edge?
 
-Yes.
+No.
 
-As long as extensions are allowed and BingBeGone is installed.
+Edge is innocent in this situation.
+
+Mostly.
+
+---
+
+## Why does Windows keep opening Bing?
+
+Because Microsoft really likes Bing.
+
+Like *really* likes Bing.
+
+Like “please stop asking” likes Bing.
 
 ---
 
@@ -20,58 +34,50 @@ As long as extensions are allowed and BingBeGone is installed.
 
 No.
 
-Searches are processed locally inside the browser.
+Your questionable 2AM searches remain between you and your browser history.
 
 ---
 
-## Does this work outside the browser?
-
-No.
-
-BingBeGone only works after URLs open in your default browser.
-
----
-
-## Can I use another search engine?
+## Can I use a custom search engine?
 
 Yes.
 
-Custom search engine templates are supported.
+As long as it supports query URLs.
+
+If you want to redirect searches into a local Apache Solr cluster running on a Raspberry Pi in a shoebox, nobody here will stop you.
 
 ---
 
-## Why does BingBeGone need permissions?
+## Does this work on Firefox?
 
-The extension requires:
-- navigation detection
-- storage access
+Currently no.
 
-These permissions are required to detect Bing search pages and save preferences.
+This extension is built for Chromium browsers.
 
-Read more in [PERMISSIONS](PERMISSIONS).
+Firefox support may happen eventually if the stars align and Mozilla continues existing.
 
 ---
 
-## Is BingBeGone open source?
+## Can this break websites?
+
+Probably not.
+
+But if Microsoft invents a new experimental ultra-hyper-Bing-navigation-system-protocol-layer™ tomorrow, things may temporarily explode.
+
+---
+
+## Why does this extension exist?
+
+Spite.
+
+Next question.
+
+---
+
+## Is this open source?
 
 Yes.
 
-The source code is publicly available on GitHub.
+You are encouraged to inspect the code.
 
----
-
-## Was AI used during development?
-
-Yes.
-
-Generative AI tools assisted portions of development, documentation, and boilerplate generation, with human review and testing throughout the process.
-
----
-
-## How do I contact support?
-
-Email:
-
-```txt
-support@bingbegone.com
-```
+You are also encouraged to laugh at the comments.

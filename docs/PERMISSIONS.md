@@ -1,28 +1,33 @@
-# Permissions
+# Permissions 🔐
 
-BingBeGone requests only the permissions required for redirect functionality.
+BingBeGone intentionally requests the minimum permissions required to function.
+
+No scary nonsense.
+No “read and modify all data on all websites.”
+No ancient forbidden browser rituals.
 
 ---
 
 ## storage
 
-Used to save user preferences such as:
-
+Used to save:
 - selected search engine
-- redirect mode
-- redirect delay
-- extension enabled/disabled state
-- custom search engine URLs
+- redirect preferences
+- sync settings
+- extension state
 
-Settings may optionally sync through the user's Chrome profile.
+Optional Chrome profile syncing uses:
+```txt
+chrome.storage.sync
+```
 
 ---
 
 ## webNavigation
 
-Used to detect navigation to Bing search pages in order to perform redirects.
+Used to detect when the browser navigates to a Bing search page.
 
-The extension only checks Bing URLs and does not inspect unrelated browsing activity.
+Without this permission the extension would have the observational abilities of a potato.
 
 ---
 
@@ -33,6 +38,25 @@ https://www.bing.com/*
 https://bing.com/*
 ```
 
-Required so BingBeGone can detect Bing search pages and redirect them appropriately.
+Required so BingBeGone can:
+- detect Bing searches
+- redirect Bing searches
 
-The extension does not access unrelated websites.
+The extension does NOT access unrelated websites.
+
+---
+
+## No Tracking
+
+BingBeGone:
+- does not use analytics
+- does not collect telemetry
+- does not sell data
+- does not fingerprint users
+- does not upload browsing history
+
+Your searches stay between:
+- you
+- your browser
+- your chosen search engine
+- whatever horrifying ad ecosystem already exists there

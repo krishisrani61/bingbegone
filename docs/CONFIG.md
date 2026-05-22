@@ -1,23 +1,25 @@
 # Configuration
 
-BingBeGone supports multiple redirect modes and search engines.
+BingBeGone is intentionally configurable because hardcoding things is how software becomes haunted.
 
 ---
 
-## Supported Search Engines
+# Search Engine Selection
+
+Supported engines:
 
 - Google
 - DuckDuckGo
 - Brave Search
 - Startpage
 - Kagi
-- Custom URLs
+- Custom URL
 
 ---
 
-## Custom Search URLs
+# Custom Search URLs
 
-You may define your own search engine template using:
+You may specify a custom search URL using:
 
 ```txt
 {query}
@@ -29,45 +31,61 @@ Example:
 https://example.com/search?q={query}
 ```
 
----
-
-## Redirect Modes
-
-### Instant Redirect
-
-Immediately redirects the Bing search page.
-
-### Redirect Page
-
-Shows a confirmation/interstitial page before redirecting.
-
-This page includes:
-- cancel button
-- redirect countdown
-- manual continue button
+BingBeGone replaces `{query}` with the search terms from Bing.
 
 ---
 
-## Sync Settings
+# Redirect Modes
 
-Settings can optionally sync through your Chrome profile using:
+## Instant Redirect
+
+Immediately redirects Bing searches.
+
+Fast.
+
+Aggressive.
+
+Efficient.
+
+Like a New York taxi driver.
+
+---
+
+## Redirect Page
+
+Shows an intermediate page before redirecting.
+
+Features:
+- Cancel button
+- Delay timer
+- Visible destination
+- Emotional closure
+
+---
+
+# Redirect Delay
+
+Adjustable in milliseconds.
+
+Recommended values:
+
+| Delay | Experience |
+|---|---|
+| 0ms | Teleportation |
+| 500ms | Fast |
+| 1500ms | Normal |
+| 5000ms | Dramatic |
+
+---
+
+# Sync Settings
+
+BingBeGone can sync settings through your Chrome profile using:
 
 ```txt
 chrome.storage.sync
 ```
 
-This allows BingBeGone preferences to follow you across signed-in browsers.
+This allows settings to follow you between devices.
 
----
-
-## Ignored Bing Parameters
-
-BingBeGone ignores unnecessary Bing tracking parameters such as:
-
-- FORM
-- PC
-- cvid
-- sp
-- ghc
-
-Only the search query itself is preserved.
+Assuming Google feels cooperative that day.

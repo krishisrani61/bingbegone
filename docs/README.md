@@ -1,106 +1,125 @@
-<p align="center">
-  <img src="./logo.png" width="500">
-</p>
+<img src="logo.png" width="700">
 
 # BingBeGone
 
-BingBeGone redirects Bing searches to the search engine you actually want to use.
+> Because you said “default browser,” not “default Microsoft experience.”
 
-When Windows, Microsoft services, or other applications open Bing search pages in your default browser, BingBeGone detects the search query and redirects it automatically.
+BingBeGone redirects Bing searches to the search engine *you* actually want to use.
+
+When Windows, Microsoft services, Outlook, Widgets, Start Menu search, random mystery buttons, or ancient corporate dark magic opens a Bing search in your browser, BingBeGone quietly intercepts it and redirects it somewhere better.
+
+Usually Google.
+
+Sometimes DuckDuckGo.
+
+Potentially a custom search engine hosted in a basement somewhere.
+
+Your call.
 
 ---
 
-## Features
+# Features
 
-- Redirect Bing searches to:
+- Redirect Bing searches automatically
+- Optional redirect confirmation page
+- Cancel button before redirect
+- Sync settings through Chrome profile
+- Support for:
   - Google
   - DuckDuckGo
   - Brave Search
   - Startpage
   - Kagi
-  - Custom search engines
-
-- Optional redirect confirmation page
-- Cancel redirect support
-- Adjustable redirect delay
-- Chrome profile sync support
+  - Custom search URLs
 - Lightweight Manifest V3 extension
-- No analytics
 - No tracking
+- No analytics
 - No external servers
+- No accounts
+- No subscriptions
+- No crypto
+- No AI “productivity assistants”
+- No blockchain-enhanced synergy optimization
 
 ---
 
-## Example
+# Example
 
 Input:
 
 ```txt
-https://www.bing.com/search?q=snakes
+https://www.bing.com/search?q=snakes&FORM=WSBEDG
 ```
 
-Redirects to:
+Output:
 
 ```txt
 https://www.google.com/search?q=snakes
 ```
 
----
-
-## Installation
-
-1. Download the extension
-2. Open Chrome or Edge
-3. Navigate to:
-   - `chrome://extensions`
-   - or `edge://extensions`
-4. Enable Developer Mode
-5. Click "Load unpacked"
-6. Select the `extension/` folder
+Nature is healing.
 
 ---
 
-## Documentation
+# Installation
 
-- [Configuration](CONFIG)
-- [Privacy Policy](PRIVACY)
-- [Permissions](PERMISSIONS)
-- [Development](DEVELOPMENT)
+## Chrome Web Store
+
+Install directly from the Chrome Web Store.
+
+(once approved and not being judged by an exhausted Google reviewer at 2AM)
+
+---
+
+## Sideloading
+
+BingBeGone can also be sideloaded on:
+
+- Google Chrome
+- Microsoft Edge
+- Brave
+- Vivaldi
+- Opera
+- Arc
+- Basically any Chromium browser with enough emotional resilience
+
+See [SIDELOADING](SIDELOADING)
+
+---
+
+# Documentation
+
+- [CONFIG](CONFIG)
 - [FAQ](FAQ)
+- [PERMISSIONS](PERMISSIONS)
+- [PRIVACY](PRIVACY)
+- [SIDELOADING](SIDELOADING)
+- [TROUBLESHOOTING](TROUBLESHOOTING)
+- [DEVELOPMENT](DEVELOPMENT)
+- [ARCHITECTURE](ARCHITECTURE)
 
 ---
 
-## Privacy
+# Privacy
 
-BingBeGone does not:
-- collect personal data
-- track browsing activity
-- use analytics
-- communicate with external servers
+BingBeGone does not collect data.
 
-Everything runs locally inside your browser.
+Seriously.
 
-Read more in [PRIVACY](PRIVACY).
+Like genuinely none.
+
+See [PRIVACY](PRIVACY)
 
 ---
 
-## AI Disclosure
+# AI Disclosure
 
-Portions of BingBeGone were developed with assistance from generative AI tools, with human review, testing, and modification throughout development.
+Portions of this extension were developed with assistance from generative AI tools, with human review, testing, debugging, rewriting, and the occasional emotionally charged screaming session.
 
 ---
----
 
-## Support
-
-Need help, found a bug, or have a feature request?
-
-Contact:
-
-```txt
-support@bingbegone.com
-```
-
-## License
+# License
 
 MIT License
+
+Do crimes responsibly.

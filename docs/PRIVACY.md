@@ -1,49 +1,57 @@
-# Privacy Policy
+# Privacy Policy 🕵️
 
-BingBeGone does not collect, store, transmit, or sell personal data.
+BingBeGone does not collect, transmit, store, or sell personal information.
 
-All extension functionality operates locally within the user's browser.
-
----
-
-## BingBeGone Does NOT
-
-- collect analytics
-- track browsing history
-- store search history
-- use telemetry
-- fingerprint users
-- communicate with external servers
+Everything operates locally in your browser.
 
 ---
 
-## Settings Storage
+## Data Collection
 
-Settings are stored using Chrome extension storage APIs.
+None.
 
-Depending on configuration, settings may be stored using:
+Literally none.
 
-- `chrome.storage.local`
-- `chrome.storage.sync`
+There is no server.
 
-When sync is enabled, Chrome manages synchronization through the user's Google account.
-
----
-
-## Website Access
-
-BingBeGone only activates on Bing search URLs required for redirect functionality.
-
-The extension does not inspect unrelated websites.
+There is nowhere to send the data even if we wanted to.
 
 ---
 
-## Third Parties
+## Search Queries
 
-BingBeGone does not integrate with advertising, analytics, or tracking providers.
+Search queries are processed locally for redirect purposes only.
+
+They are never:
+- logged
+- stored
+- transmitted externally
 
 ---
 
-## Open Source
+## Analytics
 
-The source code is publicly auditable through the project's GitHub repository.
+None.
+
+No Google Analytics.
+No telemetry.
+No dashboards.
+No “engagement metrics.”
+
+Peace at last.
+
+---
+
+## Sync Storage
+
+If enabled, Chrome may synchronize extension settings using your Chrome account.
+
+This is handled entirely by the browser.
+
+---
+
+## Third-Party Services
+
+BingBeGone does not communicate with third-party servers.
+
+Other than redirecting you to your selected search engine, obviously.

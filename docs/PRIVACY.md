@@ -56,28 +56,25 @@ BingBeGone does not communicate with third-party servers.
 
 Other than redirecting you to your selected search engine, obviously.
 
-## Future Anonymous Usage Analytics
+## Future Analytics & Usage Metrics
 
-In a future update, this extension may include optional anonymous usage analytics to help improve functionality, compatibility, and reliability.
+In the future, this extension may include optional, privacy-friendly usage analytics to help improve functionality, reliability, and compatibility across browsers and extension versions.
 
-The purpose of this analytics system would be to better understand things such as:
+If implemented, these analytics would be limited to anonymous operational metrics such as:
 
-- Which extension versions are currently in use
-- General browser/platform distribution (for example, Chrome vs. Edge)
-- Approximate number of active installations
-- Aggregate feature usage statistics (such as redirect counts)
-- Error and compatibility trends
+- Total number of redirects performed
+- Extension version distribution
+- Browser/platform usage statistics
+- Basic error or compatibility reporting
 
-This data would be collected in a privacy-focused manner. The extension would **not** collect:
-
+The extension would **not** collect:
 - Browsing history
 - Search contents
-- Personal information
+- Personally identifiable information
 - Account information
-- Page contents
 - Keystrokes
-- IP addresses for user identification
+- Page contents
 
-Analytics events would be aggregated and limited in scope whenever possible. For example, the extension may periodically send summarized statistics (such as daily usage totals) rather than transmitting information for every individual action.
+Any analytics introduced would be designed to collect only the minimum information necessary to understand how the extension is functioning in the real world and to help prioritize bug fixes and updates.
 
-The goal of this system is solely to help improve the extension, identify bugs, and understand overall usage patterns — not to track individual users.
+This section is provided in advance for transparency as analytics features are explored and tested; info would be collected in aggregate and will be publically displayed 

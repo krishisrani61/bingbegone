@@ -55,3 +55,29 @@ This is handled entirely by the browser.
 BingBeGone does not communicate with third-party servers.
 
 Other than redirecting you to your selected search engine, obviously.
+
+## Future Anonymous Usage Analytics
+
+In a future update, this extension may include optional anonymous usage analytics to help improve functionality, compatibility, and reliability.
+
+The purpose of this analytics system would be to better understand things such as:
+
+- Which extension versions are currently in use
+- General browser/platform distribution (for example, Chrome vs. Edge)
+- Approximate number of active installations
+- Aggregate feature usage statistics (such as redirect counts)
+- Error and compatibility trends
+
+This data would be collected in a privacy-focused manner. The extension would **not** collect:
+
+- Browsing history
+- Search contents
+- Personal information
+- Account information
+- Page contents
+- Keystrokes
+- IP addresses for user identification
+
+Analytics events would be aggregated and limited in scope whenever possible. For example, the extension may periodically send summarized statistics (such as daily usage totals) rather than transmitting information for every individual action.
+
+The goal of this system is solely to help improve the extension, identify bugs, and understand overall usage patterns — not to track individual users.

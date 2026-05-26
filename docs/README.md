@@ -46,14 +46,14 @@ Your call.
 
 # Documentation
 
-- [CONFIG](Config)
+- [Config](CONFIG)
 - [FAQ](FAQ)
-- [PERMISSIONS](Permissions)
-- [PRIVACY](Privacy)
-- [SIDELOADING](Sideloading)
-- [TROUBLESHOOTING](Troubleshooting)
-- [DEVELOPMENT](Development)
-- [ARCHITECTURE](Architecture)
+- [Permissions](PERMISSIONS)
+- [Privacy](PRIVACY)
+- [Sideloading](SIDELOADING)
+- [Troubleshooting](TROUBLESHOOTING)
+- [Development](DEVELOPMENT)
+- [Architecture](ARCHITECTURE)
 
 ---
 
